@@ -1,0 +1,19 @@
+{
+  "name": "mqtt-kafka-proxy",
+  "version": "1.0.0",
+  "description": "mqtt proxy with kafka broker",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mqtt",
+    "kafka",
+    "iot"
+  ],
+  "author": "barankaya",
+  "license": "ISC",
+  "dependencies": {
+    "aedes": "^0.46.3",
+    "kafka-node": "^5.0.0"
+  }
+}
