@@ -2,8 +2,8 @@ var aedes = require('aedes');
 const net = require('net');
 const kafka = require('kafka-node');
 const log = require('./log');
-const mqttPort = process.env.MQTT_PORT || 1883;
-const mqttUsername = process.env.USERNAME || 'demo';
+const port = 1883;
+const mqttUsername = process.env.USERNAME || 'user';
 const mqttPassword = process.env.PASSWORD || 'pass';
 const kkHost = process.env.KAFKA_HOST || 'localhost:9092';
 const kkTopic = process.env.KAFKA_TOPIC || 'mqtt';
@@ -83,8 +83,8 @@ aedes = new aedes({
     published
 });
 const server = net.createServer(aedes.handle);
-server.listen(mqttPort, function () {
-    log.info('server started and listening on port ', mqttPort);
+server.listen(port, function () {
+    log.info('server started and listening on port ', port);
 });
 server.on('ready', function () {
     log.info('Simple plain MQTT server is up and running');
