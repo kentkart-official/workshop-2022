@@ -12,9 +12,9 @@ MQTT (Message Queuing Telemetry Transport) düşük bant genişliği olan, gecik
 Uygulama default olarak `1883` portundan çalışmaktadır.
 
 ### [Apache Kafka](https://kafka.apache.org/)
-Apache Kafka, binlerce şirket tarafından yüksek performanslı data pipelines, akış analizi, data entegrasyon ve kritik görev uygulamaları için kullanılan açık kaynaklı bir dağıtılmış olay akışı platformudur.
+Apache Kafka, dağıtılmış ve hataya dayanıklı bir akış işleme sistemidir.
 
-Uygulamamız çalışmaya başladığında default olarak `localhost:9092` de kurulmuş bir Apache Kafka sunucusuna bağlanmaya çalışmaktadır. Kafka kurulumuna [buradan]() bakabilirsiniz. Bağlanmak istediğiniz başka bir kafka var ise `KAFKA_HOST` parametresinden değiştirebilirsiniz.
+Uygulamamız çalışmaya başladığında default olarak `localhost:9092` de kurulmuş bir Apache Kafka sunucusuna bağlanmaya çalışmaktadır. Kafka kurulumuna [buradan](https://github.com/kentkart-official/workshop-2022/blob/main/Apache%20Kafka.md) bakabilirsiniz. Bağlanmak istediğiniz başka bir kafka var ise `KAFKA_HOST` parametresinden değiştirebilirsiniz.
 
 ### [Node.js](https://nodejs.org/en/)
 Node.js, JavaScript ile server side uygulamalar yazabileceğimiz, Javascript Runtime platformudur.
