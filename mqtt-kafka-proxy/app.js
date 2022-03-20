@@ -20,7 +20,7 @@ const authenticate = function (client, username, password, callback) {
     username = username || '';
     password = password || '';
 
-    if (username.normalize() == mqttUsername.normalize() && password.normalize() == mqttPassword.normalize()) {
+    if (username.toString().normalize() == mqttUsername.normalize() && password.toString().normalize() == mqttPassword.normalize()) {
         client.user = username;
         callback(null, true);
     } else {
